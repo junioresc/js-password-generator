@@ -67,7 +67,12 @@ function generatePassword() {
 
   characterPicker();
 
-  
+  let password = "";
+  // Loop picks a random letter from values until the desired length is completed
+  for (var i = 0; i < passwordLength; i++) {
+    password = password + values.charAt(Math.floor(Math.random()* Math.floor(values.length - 1)));
+  }
+  return password
 }
 
 // Add event listener to generate button
