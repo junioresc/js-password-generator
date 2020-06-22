@@ -72,6 +72,7 @@ function generatePassword() {
   for (var i = 0; i < passwordLength; i++) {
     password = password + values.charAt(Math.floor(Math.random()* Math.floor(values.length - 1)));
   }
+  let values = "";
   return password
 }
 
